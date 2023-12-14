@@ -651,9 +651,39 @@ body.dark-theme {
   border-radius: 1rem;
 }
 
+.countdown-container {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.countdown-title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 10px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown-item {
+  margin: 0 20px;
+}
+
+.countdown-value {
+  display: block;
+  font-size: var(--h1-font-size);
+  font-weight: bold;
+}
+
+.countdown-label {
+  font-size: var(--h1-font-size);
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -666,6 +696,18 @@ body.dark-theme {
   .gift__container {
     grid-template-columns: 150px;
     justify-content: center;
+  }
+
+  .countdown-value {
+    font-size: var(--smaller-font-size);
+  }
+
+  .countdown-label {
+    font-size: var(--smaller-font-size);
+  }
+
+  .countdown-item {
+    margin: 0 3px;
   }
 }
 
@@ -698,6 +740,19 @@ body.dark-theme {
 
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .countdown-value {
+    font-size: var(--small-font-size);
+  }
+
+  .countdown-label {
+    font-size: var(--small-font-size);
+  }
+
+  .countdown-item {
+    margin: 0 5px;
+    justify-content: center;
   }
 }
 
@@ -765,6 +820,18 @@ body.dark-theme {
 
   .footer__container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .countdown-value {
+    font-size: var(--h3-font-size);
+  }
+
+  .countdown-label {
+    font-size: var(--h3-font-size);
+  }
+
+  .countdown-item {
+    margin: 0 10px;
+    justify-content: center;
   }
 }
 
@@ -870,5 +937,18 @@ body.dark-theme {
   
   .scrollup {
     right: 3rem;
+  }
+
+  .countdown-value {
+    font-size: var(--h2-font-size);
+  }
+
+  .countdown-label {
+    font-size: var(--h2-font-size);
+  }
+
+  .countdown-item {
+    margin: 0 20px;
+    justify-content: center;
   }
 }
