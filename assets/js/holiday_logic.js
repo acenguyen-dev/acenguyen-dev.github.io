@@ -25,7 +25,22 @@ const wish = {
     "huyen_tran": "Chúc Trân sớm hái trái ngọt với tình yêu của em, Giáng sinh ấm áp và năm tuổi dương thật thành công nheee 💖",
     "vi_nguyen": "Chúc chị Vị và gia đình nhỏ một Giáng Sinh và Năm mới ấm áp, công việc thuận lợi và gặp thật nhiều may mắn nha chịiiiii 💖",
     "chung_hin": "Chúc đại ca cùng chị và em bé Giáng Sinh an lành, năm mới thật nhiều may mắn và thành công ạ 💖",
-    "ly_phung": "Chúc chị cùng a Chung và em bé Giáng Sinh an lành, năm mới thật nhiều may mắn và thành công ạ 💖"
+    "ly_phung": "Chúc chị cùng a Chung và em bé Giáng Sinh an lành, năm mới thật nhiều may mắn và thành công ạ 💖",
+    "dat_nguyen": "Chúc em Đạt hấp giáng sinh ấm áp, năm mới thắng lợi mới, bớt ẩy và lấy vợ luôn nhé =))) 💖",
+    "hoat_nong": "Chúc em Hoạt hấp giáng sinh ấm áp, năm mới thắng lợi mới, bớt ẩy và lấy vợ luôn nhé =))) 💖",
+    "duc_tran": "Chúc em Đức giáng sinh ấm áp, năm mới x2 mọi thứ, thật nhiều may mắn và sớm có người thương em nhé =))) 💖",
+    "nam_nghiem": "Chúc em Nam hấp giáng sinh ấm áp, năm mới thắng lợi mới, bớt ẩy và lấy vợ luôn nhé =))) 💖",
+    "khanh_hoang": "Chúc em Khánh giáng sinh ấm áp, năm mới x2 mọi thứ, thật nhiều may mắn và sớm hái quả ngọt nha =))) 💖",
+    "trung_dang": "Chúc em Trung hấp giáng sinh ấm áp, năm mới may mắn, thành công, có được công việc ổn định vui lòng mọi người thân yêu quý mến em nhen 💖",
+    "ngan_bit": "Chúc chị Ngân Giáng Sinh an lành, năm mới thật nhiều niềm vui mới và người thương xuất hiện cùng hái trái ngọt nha ạ 💖",
+    "trung_nhan": "Chúc em Nhân hấp báo thủ giáng sinh ấm áp, năm mới may mắn, thành công, luôn làm vui lòng mọi người thân yêu quý mến em nhen 💖",
+    "linh_nguyen": "Chúc em Linh sớm hái trái ngọt với tình yêu của em, Giáng sinh ấm áp và năm mới thật thành công nheee 💖",
+    "thuc_anh": "Chúc em Trứng sớm hái trái ngọt cùng em Hiệp báo của anh, Giáng sinh an lành và ấm áp nhé em 💖",
+    "hoang_hip": "Chúc em Hoàng sớm hái trái ngọt cùng em gái Lương Tài, Giáng sinh an lành và năm mới ấm áp nhé em 💖",
+    "lam_chuot": "Chúc em Lâm sớm cởi bỏ chấp niệm, tìm cho mình được người thương và đón giáng sinh an lành cùng năm mới ấm áp, luôn báo hiếu với dì Út nha em 💖",
+    "chau_anh": "Chúc Chou Eng Giáng Sinh an lành, năm mới thật nhiều niềm vui mới và người thương xuất hiện cùng hái trái ngọt nha em 💖",
+    "hanh_trang": "Chúc em Trang sớm hái trái ngọt cùng người anh Chí Chương của anh, Giáng sinh an lành và năm mới ấm áp nhé em 💖",
+    "lam_ngo": "Chúc thầy Giáng sinh và năm mới ấm áp, sang năm mọi thứ đều gấp đôi nha 💖",
 }
 // End wish data ================================================================================================================
 
@@ -144,6 +159,68 @@ if (viewer == "Lý" || viewer == "Ly Phung") {
     const wish_desc = document.getElementsByClassName("celebrate__description");
     wish_desc[0].innerHTML = wish.ly_phung
 }
+if (viewer == "Thành Đạt" || viewer == "Danny") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.dat_nguyen
+}
+if (viewer == "Hoạt Nông" || viewer == "Hoat Nong") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.hoat_nong
+}
+if (viewer == "Đức Trần" || viewer == "Ghost Ryuki" || viewer == "Ryuki") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.duc_tran
+}
+if (viewer == "Nam Nghiêm" || viewer == "FBoy Gà 2k1") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.nam_nghiem
+}
+if (viewer == "Khánh Hoàng" || viewer == "Nhật Khánh") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.khanh_hoang
+}
+if (viewer == "Đăng Trung" || viewer == "Dang Trung") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.trung_dang
+}
+if (viewer == "Ngân Bit" || viewer == "Thùy Ngân" || viewer == "Ngân Đặng") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.ngan_bit
+}
+if (viewer == "Trung Nhân" || viewer == "Nhan Vu") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.trung_nhan
+}
+if (viewer == "Linh Nguyễn" || viewer == "Khanh Linh" || viewer == "Khánh Linh") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.linh_nguyen
+}
+if (viewer == "Thục Anh" || viewer == "Thuc Anh") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.thuc_anh
+}
+if (viewer == "Tiến Hoàng" || viewer == "Hoàng Híp") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.hoang_hip
+}
+if (viewer == "Tùng Lâm" || viewer == "Lam Chuot" || viewer == "Lâm Cancelo") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.lam_chuot
+}
+if (viewer == "Châu Anh" || viewer == "Chau Anh") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.chau_anh
+}
+if (viewer == "Hạnh Trang" || viewer == "Trang Hoàng") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.hanh_trang
+}
+if (viewer == "Tiến Lâm" || viewer == "Felix") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.lam_ngo
+}
+
+
 
 
 // Audio part
