@@ -41,6 +41,7 @@ const wish = {
     "chau_anh": "Chúc Chou Eng Giáng Sinh an lành, năm mới thật nhiều niềm vui mới và người thương xuất hiện cùng hái trái ngọt nha em 💖",
     "hanh_trang": "Chúc em Trang sớm hái trái ngọt cùng người anh Chí Chương của anh, Giáng sinh an lành và năm mới ấm áp nhé em 💖",
     "lam_ngo": "Chúc thầy Giáng sinh và năm mới ấm áp, sang năm mọi thứ đều gấp đôi nha 💖",
+    "dai_vuong": "Chúc bạn Đại Giáng sinh và năm mới ấm áp, sang năm mọi thứ đều gấp đôi, cả công việc lẫn tình duyên đều may mắn nha bro 💖",
 }
 // End wish data ================================================================================================================
 
@@ -218,6 +219,10 @@ if (viewer == "Hạnh Trang" || viewer == "Trang Hoàng") {
 if (viewer == "Tiến Lâm" || viewer == "Felix") {
     const wish_desc = document.getElementsByClassName("celebrate__description");
     wish_desc[0].innerHTML = wish.lam_ngo
+}
+if (viewer == "Đại Vương" || viewer == "Dai Vuong") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.dai_vuong
 }
 
 
