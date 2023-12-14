@@ -53,7 +53,7 @@ alert("Welcome " + viewer + " to the cozy Christmas Eve of Ace! 💙");
 // Customization ================================================================================================================
 const title = document.getElementsByClassName("home__title");
 title[0].innerHTML = "Howdyyy " + viewer + " <br> Merry Christmas and <br> Happy New Year!"
-if (viewer == "Ha Vu" || viewer == "Ha" || viewer == "Hà Vũ" || viewer == "Hà") {
+if (viewer == "hazusodumb" || viewer == "Vu Thu Ha" || viewer == "Hà Vũ 2010" || viewer == "Vũ Thu Hà") {
     const desc = document.getElementsByClassName("home__description");
     desc[0].innerHTML = "Christmas and a new year is about to begin, all good wishes and successes. And you should just be youu, so xịn and prettiiiiiiiii 💙"
     const wish_desc = document.getElementsByClassName("celebrate__description");
