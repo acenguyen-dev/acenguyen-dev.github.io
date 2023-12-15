@@ -698,11 +698,11 @@ body.dark-theme {
   }
 
   .countdown-value {
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
   }
 
   .countdown-label {
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
   }
 
   .countdown-item {
