@@ -1,6 +1,5 @@
 // Wish data ================================================================================================================
 const wish = {
-    "ha_vu": "Wishing you a joyful Christmas and a wonderful New Year filled with happiness and love 💙 你笑起来真好看 🌝 <br> Giáng Sinh an lành và Năm mới hạnh phúc ạ 🥰",
     "hiep": "Chúc em và trứng sớm hái trái ngọt, Giáng sinh an lành và ấm áp nhé bro 💖",
     "hoang_anh": "Chúc mùa khoai 24 năm của em zai anh sớm thu hoạch, mọi điều như ý và thật may mắn trong năm mới nhé 💖",
     "phuong_nam": "Chúc bro sớm hái trái ngọt (mặc dù chắc hái cmnr), năm mới vạn sự như ý và ngày càng phát triển nha 💖",
@@ -12,10 +11,11 @@ const wish = {
     "linh_do": "Chúc thầy Giáng sinh và năm mới ấm áp, sang năm mọi thứ đều gấp đôi nha ạaaa 💖",
     "quang_dong": "Chúc em Đồng giáng sinh ấm áp, năm mới thắng lợi mới, lấy vợ luôn nhé =)))",
     "duc_anh": "Chúc đại ca Đức Anh cùng pé Heo và chị 1 giáng sinh ấm áp, năm mới nhiều thành công mới, could start from Heo's next gen ạ 💖",
-    "hung_nguyen": "Chúc a Hưng một giáng sinh và năm mới an lành, năm mới thắng lợi mới ạ 💖",
+    "hung_nguyen": "Chúc a Hưng cùng chị nhà một giáng sinh và năm mới an lành, sang năm x2 mọi thứ, thắng lợi trên mọi mặt trận và làm 1 chú rồng con ạ 💖",
     "anh_dao": "Chúc chị Đào và gia đình nhỏ một Giáng Sinh và Năm mới ấm áp, công việc thuận lợi và gặp thật nhiều may mắn nha chịiiiii 💖",
     "trang_nguyen": "Chúc Trang giáng sinh an lành, năm mới sớm tìm được ý trung nhân cậu nhéeeee 💖",
     "minh_thong": "Chúc em Thông giáng sinh ấm áp, năm mới thắng lợi mới, lấy vợ luôn nhé =)))",
+    "ha_vu": "Wishing you a joyful Christmas and a wonderful New Year filled with happiness and love 💙 你笑起来真好看 🌝 <br> Giáng Sinh an lành và Năm mới hạnh phúc ạ 🥰",
     "quang_huy": "Chúc em Huy giáng sinh ấm áp, năm mới thắng thành công may mắn, ngày càng oánh póng pàn hay và sớm có người thương nha 💖",
     "chien_hoang": "Chúc a Chiến giáng sinh an lành, thật nhiều thành công và may mắn trong năm mới ạ 💖",
     "lan_tran": "Chúc chị Lan giáng sinh an lành, thật nhiều thành công và may mắn trong năm mới ạ 💖",
@@ -226,12 +226,10 @@ if (viewer == "Đại Vương" || viewer == "Dai Vuong") {
 }
 
 
-
-
 // Audio part
 document.addEventListener('DOMContentLoaded', function() {
     const audio = document.getElementById('backgroundAudio');
-    audio.volume = 0.168
+    audio.volume = 0.468
     
     // Function to play the audio
     function playAudio() {
