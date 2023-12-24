@@ -21,6 +21,7 @@ const wish = {
     "lan_tran": "Chúc chị Lan giáng sinh an lành, thật nhiều thành công và may mắn trong năm mới ạ 💖",
     "trinh_nguyen": "Chúc chị Trinh Giáng Sinh an lành, năm mới thật nhiều niềm vui mới và người thương xuất hiện cùng hái trái ngọt nha ạ 💖",
     "quynh_dieu": "Chúc chị Diệu cùng gia đình và các bạn nhỏ Giáng Sinh an lành, năm mới may mắn và thành công, chúc chị 1 đời an yên ạaaa 💖",
+    "quynh_huong": "Chúc Quỳnh cùng gia đình có một Giáng Sinh an lành, năm mới may mắn và thành công, chúc em 1 đời an yên 💖",
     "huong_pham": "Chúc Hương cùng gia đình có một mùa Giáng Sinh ấm áp, một năm mới tràn ngập niềm vui và may mắn ạ 💖",
     "huyen_tran": "Chúc Trân sớm hái trái ngọt với tình yêu của em, Giáng sinh ấm áp và năm tuổi dương thật thành công nheee 💖",
     "vi_nguyen": "Chúc chị Vị và gia đình nhỏ một Giáng Sinh và Năm mới ấm áp, công việc thuận lợi và gặp thật nhiều may mắn nha chịiiiii 💖",
@@ -42,6 +43,7 @@ const wish = {
     "hanh_trang": "Chúc em Trang sớm hái trái ngọt cùng người anh Chí Chương của anh, Giáng sinh an lành và năm mới ấm áp nhé em 💖",
     "lam_ngo": "Chúc thầy Giáng sinh và năm mới ấm áp, sang năm mọi thứ đều gấp đôi nha 💖",
     "dai_vuong": "Chúc bạn Đại Giáng sinh và năm mới ấm áp, sang năm mọi thứ đều gấp đôi, cả công việc lẫn tình duyên đều may mắn nha bro 💖",
+    "de_mo": "Chúc bạn Giáng sinh và năm mới ấm áp, luôn là chính mình, tự tin tỏa sáng nhé 💖",
 }
 // End wish data ================================================================================================================
 
@@ -223,6 +225,14 @@ if (viewer == "Tiến Lâm" || viewer == "Felix") {
 if (viewer == "Đại Vương" || viewer == "Dai Vuong") {
     const wish_desc = document.getElementsByClassName("celebrate__description");
     wish_desc[0].innerHTML = wish.dai_vuong
+}
+if (viewer == "Hương Quỳnh" || viewer == "Quỳnh Nguyễn") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.quynh_huong
+}
+if (viewer == "Test Nguyễn" || viewer == "Test Nguyen") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.de_mo
 }
 
 
