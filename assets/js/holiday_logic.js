@@ -267,7 +267,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function updateCountdown() {
 const now = new Date();
-const targetDate = new Date(now.getFullYear(), 11, 25); // December month is 11 (0-based index)
+const nextYear = now.getFullYear() + 1;
+const fullNextYearDate = new Date(nextYear, 0, 1); // January 1st of next year
+
+var targetDate;
+const christmasDate = new Date(now.getFullYear(), 11, 25); // December month is 11 (0-based index)
+
+if (now > christmasDate) {
+    targetDate = new Date(fullNextYearDate.getFullYear(), 11, 25);
+} else {
+    targetDate = christmasDate;
+}
 
 const days = Math.floor((targetDate - now) / (1000 * 60 * 60 * 24));
 const hours = Math.floor((targetDate - now) / (1000 * 60 * 60)) % 24;
