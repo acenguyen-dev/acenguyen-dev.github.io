@@ -15,7 +15,7 @@ const wish = {
     "anh_dao": "Chúc chị Đào và gia đình nhỏ một Giáng Sinh và Năm mới ấm áp, công việc thuận lợi và gặp thật nhiều may mắn nha chịiiiii 💖",
     "trang_nguyen": "Chúc Trang giáng sinh an lành, năm mới sớm tìm được ý trung nhân cậu nhéeeee 💖",
     "minh_thong": "Chúc em Thông giáng sinh ấm áp, năm mới thắng lợi mới, lấy vợ luôn nhé =)))",
-    "ha_vu": "Wishing you a joyful Christmas and a wonderful New Year filled with happiness and love 💙 你笑起来真好看 🌝 <br> Giáng Sinh an lành và Năm mới hạnh phúc ạ 🥰",
+    "suhyun": "Wishing you a joyful Christmas and a wonderful New Year filled with happiness and love 💙 <br> Giáng Sinh an lành và Năm mới hạnh phúc ạ 🥰 Anh yêu Thuhuyentrannnnn ♥",
     "quang_huy": "Chúc em Huy giáng sinh ấm áp, năm mới thắng thành công may mắn, ngày càng oánh póng pàn hay và sớm có người thương nha 💖",
     "chien_hoang": "Chúc a Chiến giáng sinh an lành, thật nhiều thành công và may mắn trong năm mới ạ 💖",
     "lan_tran": "Chúc chị Lan giáng sinh an lành, thật nhiều thành công và may mắn trong năm mới ạ 💖",
@@ -56,11 +56,11 @@ alert("Welcome " + viewer + " to the cozy Christmas Eve of Ace! 💙");
 // Customization ================================================================================================================
 const title = document.getElementsByClassName("home__title");
 title[0].innerHTML = "Howdyyy " + viewer + " <br> Merry Christmas and <br> Happy New Year!"
-if (viewer == "hazusodumb" || viewer == "Vu Thu Ha" || viewer == "Hà Vũ 2010" || viewer == "Vũ Thu Hà") {
+if (viewer == "suhyun" || viewer == "Thuhuyentran" || viewer == "Trần Thu Huyền" || viewer == "Suhyun") {
     const desc = document.getElementsByClassName("home__description");
-    desc[0].innerHTML = "Christmas and a new year is about to begin, all good wishes and successes. And you should just be youu, so xịn and prettiiiiiiiii 💙"
+    desc[0].innerHTML = "Christmas and a new year is about to begin, all good wishes and successes. Mãi là công chúa xinh đẹp của anh nha ạaaa Suhyun-ah~ 💙"
     const wish_desc = document.getElementsByClassName("celebrate__description");
-    wish_desc[0].innerHTML = wish.ha_vu
+    wish_desc[0].innerHTML = wish.suhyun
 }
 if (viewer == "Hiệp" || viewer == "Hiep" || viewer == "Hiệp Hoàng") {
     const wish_desc = document.getElementsByClassName("celebrate__description");
