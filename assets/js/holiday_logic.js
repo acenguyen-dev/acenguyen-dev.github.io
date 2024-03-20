@@ -20,7 +20,7 @@ const wish = {
     "ngoc_long": "Chúc em Long giáng sinh ấm áp, năm mới hạnh phúc và quây quần cùng tất cả người thân yêu, sớm hái trái ngọt nhé em =)))",
     "joy_ta": "Chúc bạn Joy giáng sinh ấm áp, thật nhiều niềm vui và hạnh phúc, buộc em Gió lại bên mình nha cậuu =)))",
     "suhyun": "Wishing you a joyful Christmas and a wonderful New Year filled with happiness and love 💙 <br> Giáng Sinh an lành và Năm mới hạnh phúc ạ 🥰 Yêu Thuhuyentrannnnn ♥",
-    "quang_huy": "Chúc em Huy giáng sinh ấm áp, năm mới thắng thành công may mắn, ngày càng oánh póng pàn hay và sớm có người thương nha 💖",
+    "quang_huy": "Chúc em Huy giáng sinh ấm áp, năm mới thắng lợi, thành công may mắn, mọi thứ nhẹ nhàng với em và hạnh phúc bên người thương nha 💖",
     "chien_hoang": "Chúc a Chiến giáng sinh an lành, thật nhiều thành công và may mắn trong năm mới ạ 💖",
     "lan_tran": "Chúc chị Lan giáng sinh an lành, thật nhiều thành công và may mắn trong năm mới ạ 💖",
     "trinh_nguyen": "Chúc chị Trinh Giáng Sinh an lành, năm mới thật nhiều niềm vui mới và người thương xuất hiện cùng hái trái ngọt nha ạ 💖",
@@ -47,6 +47,8 @@ const wish = {
     "hanh_trang": "Chúc em Trang sớm hái trái ngọt cùng người anh Chí Chương của anh, Giáng sinh an lành và năm mới ấm áp nhé em 💖",
     "lam_ngo": "Chúc thầy Giáng sinh và năm mới ấm áp, sang năm mọi thứ đều gấp đôi nha 💖",
     "dai_vuong": "Chúc bạn Đại Giáng sinh và năm mới ấm áp, sang năm mọi thứ đều gấp đôi, cả công việc lẫn tình duyên đều may mắn nha bro 💖",
+    "thanh_lai": "Chúc bạn Thanh Again Giáng sinh và năm mới ấm áp, cả công việc lẫn tình duyên đều may mắn nha cậu 💖",
+    "thanh_ha": "Chúc em Hà và bạn Thanh anh Giáng sinh và năm mới ấm áp, sang năm mọi thứ đều gấp đôi, sớm hái trái ngọt nha bro 💖",
     "de_mo": "Chúc bạn Giáng sinh và năm mới ấm áp, luôn là chính mình, tự tin tỏa sáng nhé 💖",
 }
 // End wish data ================================================================================================================
@@ -126,7 +128,7 @@ if (viewer == "Minh Thông" || viewer == "Thông") {
     const wish_desc = document.getElementsByClassName("celebrate__description");
     wish_desc[0].innerHTML = wish.minh_thong
 }
-if (viewer == "Quang Huy" || viewer == "Huy Bach") {
+if (viewer == "Quang Huy" || viewer == "Huy Bach" || viewer == "Huy") {
     const wish_desc = document.getElementsByClassName("celebrate__description");
     wish_desc[0].innerHTML = wish.quang_huy
 }
@@ -249,6 +251,14 @@ if (viewer == "Ngọc Long" || viewer == "Long Chu" || viewer == "Bruce") {
 if (viewer == "Hằng" || viewer == "Hang" || viewer == "Joy" || viewer == "Joy Tạ") {
     const wish_desc = document.getElementsByClassName("celebrate__description");
     wish_desc[0].innerHTML = wish.joy_ta
+}
+if (viewer == "Thanh Lai" || viewer == "Thanh" || viewer == "Mon") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.thanh_lai
+}
+if (viewer == "Ha" || viewer == "Ha Nguyen") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.thanh_ha
 }
 if (viewer == "Test Nguyễn" || viewer == "Test Nguyen") {
     const wish_desc = document.getElementsByClassName("celebrate__description");
