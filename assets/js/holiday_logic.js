@@ -49,6 +49,7 @@ const wish = {
     "dai_vuong": "Chúc bạn Đại Giáng sinh và năm mới ấm áp, sang năm mọi thứ đều gấp đôi, cả công việc lẫn tình duyên đều may mắn nha bro 💖",
     "thanh_lai": "Chúc bạn Thanh Again Giáng sinh và năm mới ấm áp, cả công việc lẫn tình duyên đều may mắn nha cậu 💖",
     "thanh_ha": "Chúc em Hà và bạn Thanh anh Giáng sinh và năm mới ấm áp, sang năm mọi thứ đều gấp đôi, sớm hái trái ngọt nha bro 💖",
+    "insult": "Chú nên học trường sân khấu điện ảnh. Vì cái cách chú diễn khiến cháu cảm thấy còn chân thật hơn cả con người của chú, hãy nhớ rằng hoa thơm vì nhụy, người đáng quý vì đạo đức 😌",
     "de_mo": "Chúc bạn Giáng sinh và năm mới ấm áp, luôn là chính mình, tự tin tỏa sáng nhé 💖",
 }
 // End wish data ================================================================================================================
@@ -259,6 +260,10 @@ if (viewer == "Thanh Lai" || viewer == "Thanh" || viewer == "Mon") {
 if (viewer == "Ha" || viewer == "Ha Nguyen") {
     const wish_desc = document.getElementsByClassName("celebrate__description");
     wish_desc[0].innerHTML = wish.thanh_ha
+}
+if (viewer == "Tony" || viewer == "Tony Nguyen" || viewer == "Tony Evening") {
+    const wish_desc = document.getElementsByClassName("celebrate__description");
+    wish_desc[0].innerHTML = wish.insult
 }
 if (viewer == "Test Nguyễn" || viewer == "Test Nguyen") {
     const wish_desc = document.getElementsByClassName("celebrate__description");
